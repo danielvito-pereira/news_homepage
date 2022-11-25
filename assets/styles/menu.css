@@ -1,0 +1,71 @@
+.header {
+  width: 100%;
+  padding: 3em;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo{
+
+}
+.header .button {
+  display:none;
+  cursor: pointer;
+
+}
+.header .svg{
+  width: 2em;
+  height: 2em;
+  fill: var(--very-dark-blue);
+
+}
+.header .nav{
+  
+}
+.ul{
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items:center;
+}
+.li{
+  margin: 0 0.5em;
+}
+@media screen and (max-width: 876px) {
+  .header{
+    padding: 1em;
+  }
+  .header .button{
+    display: block;
+  }
+  .header .nav{/*quando o botão não estiver ativo */
+    width: 100%;
+   /* display: none;*/
+   overflow: hidden;
+   pointer-events: none;/*para não ter efeito no mouse*/
+   height: 0vh;
+   transition: all .5s ease-in-out;
+
+   display:flex;
+   flex-flow: column nowrap;
+   justify-content:center;
+   align-items: center;
+  }
+  .header .nav.activo{/*quando o botão estiver ativo */
+    /*para suavizar o efeito apenas retirei a altura e depois adicionei com um transition */
+    /*display: block;*/
+    height: 50vh;
+
+    pointer-events: auto;
+
+  }
+  .header .ul{
+    flex-direction: column;
+  }
+  .header .li{
+    margin: 1em 0;
+  }
+}
+

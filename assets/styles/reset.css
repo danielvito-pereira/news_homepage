@@ -15,7 +15,9 @@
 body {
   font-family:'Inter';
   box-sizing: border-box;
-
+  width: 100%;
+  
+  font-size: calc(1em + 1vw);
 }
 *, body,h1,h2,h3, figure,input{
   margin: 0;
