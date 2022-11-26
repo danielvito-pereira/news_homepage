@@ -52,8 +52,8 @@ section{
   margin-top: 2em;
 }
 .botão:hover{
-  background-color: var(--soft-orange);
-  color: var(--very-dark-blue);
+  background-color: var(--very-dark-blue);
+  color: var(--off-white);
   transition: all .5s ease-in-out;
 }
 .text{
@@ -122,7 +122,7 @@ section{
   gap: 20px;
   height: 100%;
   width: 100%;
-  font-size: 1em;
+  font-size: .8em;
 
 }
 
@@ -151,49 +151,50 @@ section{
 
   .wrapper-desk {
     flex-direction:row;
-    align-items:center;
+    align-items:flex-start;
     justify-content: space-between;
-    height: 100%;
-    background-color: rgb(0, 255, 170);
+ 
+  
   }
   .text-box {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
     gap: 0px;
-    width: 100%;
-    height:100vh;
-    background-color: rgb(55, 0, 255);
+  
+
   }
 
   .text {
-    display: flex;
     flex-direction: row; 
-    align-items: center;
-    justify-content: space-between;
+
+    justify-content: flex-end;
     gap: 20px;
-    background-color: red;
-    height: 100%;
-    width: 100%;
+
+
     /*318px*/
 }
-
+  .title{
+    
+  }
   
   .paragrafo{
-    width: 50%;
-    height:50%;
-    background-color: rgb(55, 0, 255);
+    padding: 1em;
     display: flex;
     flex-direction:column;
     align-items:flex-start;
     justify-content:center;
+   
    
   }
 
 
   .text-box .img-banner{
     width: 100%;
+    height: 15em;
     background-image: url(../images/image-web-3-desktop.jpg);
+    background-position: center;
 
   }
 
@@ -205,13 +206,33 @@ section{
     background-color: var(--very-dark-blue);
     padding: 1em;
     width: 50%;
+
     height: 100%;
   }
 
+  .news h1{
 
+    font-size: 1.2em;
+  
+  }
+  .newers {
+    height: 6.2em;
 
-
-
+  }
+  .newers h2{
+    color: var(--off-white);
+    font-size: .8em;
+  
+  }
+  .newers .paragraph{
+    font-size: .7em;
+  
+  }
+.new-gold:hover{
+  color: var(--soft-orange);
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
 
 
 
@@ -222,5 +243,17 @@ section{
 
   .nota {
     flex-direction: row;
+  }
+
+  .-orenge:hover{
+    color: var(--soft-red);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .newers {
+    height: 0%;
+    padding: 1.1em;
   }
 }

@@ -33,6 +33,15 @@
 .li{
   margin: 0 0.5em;
 }
+
+.ul li a {
+  color: var(--very-dark-blue);
+  font-size: 20px;
+}
+.ul li a:hover {
+  color: var(--soft-red);
+  transition: all .2s ease-in-out;
+}
 @media screen and (max-width: 876px) {
   .header{
     padding: 1em;
